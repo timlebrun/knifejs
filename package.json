@@ -1,0 +1,19 @@
+{
+  "name": "knife",
+  "version": "0.1.0",
+  "description": "A tiny customizeable template engine written in TS/JS",
+  "main": "knife.js",
+  "author": "Tim Lebrun <me@timlebrun.fr>",
+  "license": "ISC",
+  "scripts": {
+    "test": "ts-node tests/test.ts",
+    "build": "rollup -c",
+    "watch": "rollup -cw"
+  },
+  "devDependencies": {
+    "rollup": "^1.15.6",
+    "rollup-plugin-typescript2": "^0.21.2",
+    "typescript": "^3.5.2",
+    "ts-node": "^8.2.0"
+  }
+}
