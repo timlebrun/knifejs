@@ -104,7 +104,7 @@ export class KnifeEngine {
         
         // Replace brackets by interpolation
         const interpolated = line
-            .replace(/{{(.*)}}/i, (match, content) => '${ ' + content + ' }')
+            .replace(/{{(.*?)}}/gi, (match, content) => '${ ' + content + ' }')
             .replace('`', '\\`'); // escape backticks
         return 'output += `' + interpolated + '`;';
     }
