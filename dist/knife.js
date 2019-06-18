@@ -68,7 +68,7 @@
                 }
             }
             var interpolated = line
-                .replace(/{{(.*)}}/i, function (match, content) { return '${ ' + content + ' }'; })
+                .replace(/{{(.*?)}}/gi, function (match, content) { return '${ ' + content + ' }'; })
                 .replace('`', '\\`');
             return 'output += `' + interpolated + '`;';
         };
