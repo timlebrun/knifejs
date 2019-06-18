@@ -2,7 +2,7 @@
   "name": "knife",
   "version": "0.1.0",
   "description": "A tiny customizeable template engine written in TS/JS",
-  "main": "knife.js",
+  "main": "./dist/knife.js",
   "author": "Tim Lebrun <me@timlebrun.fr>",
   "license": "ISC",
   "scripts": {
